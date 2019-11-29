@@ -9,6 +9,17 @@ export class LoadingScene extends Phaser.Scene {
   }
 
   /**
+   * Loads all backgrounds under the path using the constants file
+   */
+  public loadBackgrounds() {
+    this.load.setPath('/assets/backgrounds');
+    // tslint:disable-next-line:forin
+    for (const prop in objects.backgrounds) {
+      this.load.image(objects.backgrounds[prop], objects.backgrounds[prop]);
+    }
+  }
+
+  /**
    * Loads all buttons under the path using the constants file
    */
   public loadButtons() {
@@ -55,6 +66,7 @@ export class LoadingScene extends Phaser.Scene {
   }
 
   public preload() {
+    this.loadBackgrounds();
     this.loadButtons();
     this.loadImages();
     this.loadSprites({

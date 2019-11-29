@@ -1,19 +1,25 @@
 export const objects = {
   scenes: {
+    about: 'about',
+    help: 'help',
     loading: 'loading',
     menu: 'menu',
     scene_one: 'scene_one'
   },
+  backgrounds: {
+    menu_bg: 'seamless-sea.jpg',
+  },
   images: {
     menu_logo: 'menu_logo.png',
-    menu_bg: 'menu_bg.jpg',
     scene_one_bg: 'scene_one_bg.jpg',
     floor: 'floor.jpg'
   },
   buttons: {
-    play_button: 'play_button.png',
-    exit_button: 'exit_button.png',
-    info_button: 'info_button.png',
+    back_button: 'button_back.png',
+    continue_button: 'button_continue.png',
+    play_button: 'button_play.png',
+    help_button: 'button_help.png',
+    about_button: 'button_about.png',
     menu_selector: 'menu_selector.png'
   },
   sprites: {
