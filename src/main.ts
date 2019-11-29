@@ -5,6 +5,8 @@ import { MenuScene } from './scenes/menu-scene';
 import { SceneOne } from './scenes/scene-one';
 import GameConfig = Phaser.Types.Core.GameConfig;
 import Game = Phaser.Game;
+import { About } from './scenes/about-scene';
+import { Help } from './scenes/help-scene';
 
 const config: GameConfig = {
   width: WORLD_WIDTH,
@@ -12,7 +14,11 @@ const config: GameConfig = {
   type: Phaser.AUTO,
   backgroundColor: '#000',
   scene: [
-    LoadingScene, MenuScene, SceneOne
+    LoadingScene,
+    MenuScene,
+    About,
+    Help,
+    SceneOne
   ],
   render: {
     pixelArt: true
