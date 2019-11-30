@@ -28,7 +28,7 @@ module.exports = {
     libraryTarget: 'umd',
     filename: '[name].js'
   },
-  watch: true,
+  watch: false,
   plugins: [
     definePlugin,
     new HtmlWebpackPlugin({
@@ -40,20 +40,13 @@ module.exports = {
         removeAttributeQuotes: false,
         collapseWhitespace: false,
         html5: false,
-        minifyCSS: false,
-        minifyJS: false,
+        minifyCSS: true,
+        minifyJS: true,
         minifyURLs: false,
         removeComments: false,
         removeEmptyAttributes: false
       },
       hash: false
-    }),
-    new BrowserSyncPlugin({
-      host: process.env.IP || 'localhost',
-      port: process.env.PORT || 3000,
-      server: {
-        baseDir: ['./', './build']
-      }
     })
   ],
   module: {
