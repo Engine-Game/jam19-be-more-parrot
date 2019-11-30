@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 // Phaser webpack config
 const phaserModule = path.join(__dirname, '/node_modules/phaser/');
@@ -22,8 +23,8 @@ module.exports = {
   devtool: 'cheap-source-map',
   output: {
     pathinfo: true,
-    path: path.resolve(__dirname, 'dev'),
-    publicPath: './dev/',
+    path: path.resolve(__dirname, 'build'),
+    publicPath: './',
     library: '[name]',
     libraryTarget: 'umd',
     filename: '[name].js'
@@ -32,7 +33,7 @@ module.exports = {
   plugins: [
     definePlugin,
     new HtmlWebpackPlugin({
-      filename: '../index.html',
+      filename: 'index.html', //path.resolve(__dirname, 'build', 'index.html'),
       template: './src/index.html',
       chunks: ['vendor', 'app'],
       chunksSortMode: 'manual',
@@ -40,14 +41,17 @@ module.exports = {
         removeAttributeQuotes: false,
         collapseWhitespace: false,
         html5: false,
-        minifyCSS: true,
-        minifyJS: true,
+        minifyCSS: false,
+        minifyJS: false,
         minifyURLs: false,
         removeComments: false,
         removeEmptyAttributes: false
       },
       hash: false
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: 'assets', to: 'assets' }
+    ]),
   ],
   module: {
     rules: [
