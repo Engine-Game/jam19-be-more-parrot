@@ -1,24 +1,33 @@
-export class Item extends Phaser.Physics.Arcade.Sprite {
-  private id: number;
-  private name: string;
-  private spriteId: number;
-  private inventorySpriteId: number;
-  private descriptions: [];
-  private combinations: [];
-  private x: number;
-  private y: number;
-  private scale: number;
+import Map = Phaser.Structs.Map;
+import {AbstractItem} from "./AbstractItem";
 
-  constructor(scene: Phaser.Scene, x: number, y: number, texture: string, frame?: string | number) {
-    super(scene, x, y, texture, frame);
+export class Item extends AbstractItem {
+  public id: number;
+  public name: string;
+  public spriteId: string;
+  public inventorySpriteId: string;
+  public descriptions: [];
+  public combinations: {};
 
-    scene.sys.updateList.add(this);
-    scene.sys.displayList.add(this);
+  constructor(scene: Phaser.Scene, id: number, name: string, spriteId: string, inventorySpriteId: string, descriptions: [], combinations: {}) {
+    super(scene, 0, 0, 'items', spriteId);
+    this.id = id;
+    this.name = name;
+    this.spriteId = spriteId;
+    this.inventorySpriteId = inventorySpriteId;
+    this.descriptions = descriptions;
+    this.combinations = combinations;
+  }
 
-    this.scale = 1;
+  static getItemMap(scene: Phaser.Scene, items: any): Phaser.Structs.Map<number, Item> {
+    let itemMap = new Phaser.Structs.Map<number, Item>([]);
 
-    this.setScale(this.scale );
-    scene.physics.world.enableBody(this);
-    this.setActive(true);
+    for (const itemId in items) {
+      let itemObj = items[itemId];
+      let item = new Item(scene, itemObj.id, itemObj.name, itemObj.spriteId, itemObj.inventorySpriteId, itemObj.descriptions, itemObj.combinations);
+      itemMap.set(itemObj.id, item);
+    }
+
+    return itemMap;
   }
 }

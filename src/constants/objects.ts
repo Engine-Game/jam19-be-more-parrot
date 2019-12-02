@@ -11,7 +11,7 @@ export const objects = {
   },
   images: {
     menu_logo: 'menu_logo.png',
-    scene_one_bg: 'scene_one_bg.jpg',
+    scene_one_bg: 'initial_sketch.png',
     floor: 'floor.jpg'
   },
   buttons: {

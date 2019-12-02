@@ -6,7 +6,13 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": false,
-    "typeRoots": ["./typings"]
+    "typeRoots": ["./typings"],
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.collection"
+    ]
   },
 
   "files": [
