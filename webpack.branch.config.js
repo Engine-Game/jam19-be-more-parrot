@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 // Phaser webpack config
@@ -28,7 +27,6 @@ module.exports = {
     libraryTarget: 'umd',
     filename: '[name].js'
   },
-  watch: false,
   plugins: [
     definePlugin,
     new HtmlWebpackPlugin({
