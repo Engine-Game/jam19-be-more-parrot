@@ -1,0 +1,12 @@
+[build]
+  publish = "build"
+  command = "npm run deploy"
+
+[context.deploy-preview]
+  command = "npm run branch"
+
+[context.branch-deploy]
+  command = "npm run branch"
+
+[context.deploy-preview.processing]
+  skip_processing = true

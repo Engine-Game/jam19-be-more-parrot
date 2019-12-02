@@ -35,6 +35,4 @@ npm run dev
 
 ## Deploy
 
-```
-npm run deploy
-```
+The application will automatically deploy through [netlify](https://www.netlify.com/) for each pull request created and we will require the build to succeed before any branch can be merged.
