@@ -19,7 +19,8 @@ export class Item extends AbstractItem {
     this.combinations = combinations;
   }
 
-  static getItemMap(scene: Phaser.Scene, items: any): Phaser.Structs.Map<number, Item> {
+  static getItemMap(scene: Phaser.Scene): Phaser.Structs.Map<number, Item> {
+    let items = scene.cache.json.get('items');
     let itemMap = new Phaser.Structs.Map<number, Item>([]);
 
     for (const itemId in items) {

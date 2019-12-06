@@ -167,8 +167,8 @@ export class SceneOne extends Phaser.Scene {
     frog.setInteractive();
     setFrogActions(this, frog);
 
-    let items = this.cache.json.get('items');
-    this.itemMap = Item.getItemMap(this, items);
+
+    this.itemMap = Item.getItemMap(this);
 
     this.itemMap.get(0).x = 470;
     this.itemMap.get(0).y = 419;
