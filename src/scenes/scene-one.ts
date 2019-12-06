@@ -129,7 +129,6 @@ export class SceneOne extends Phaser.Scene {
 
       if (hasClickedInMovementArea(pointer.worldX, pointer.worldY)) {
         this.checkpoint = { x: pointer.worldX, y: pointer.worldY };
-        console.log(this.checkpoint);
         if (this.hero.active === true) {
           if (pointer.worldX > this.hero.x) {
             // Move Right
