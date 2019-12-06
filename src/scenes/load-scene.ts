@@ -15,7 +15,6 @@ export class LoadingScene extends Phaser.Scene {
   public loadItems() {
     this.load.setPath('/assets/items');
     this.load.json('items', 'items.json');
-    // this.load.image('11', 'Bottle-01.png');
     this.load.spritesheet('items', 'item-spritesheet.png', { frameWidth: 32, frameHeight: 32 });
     }
 

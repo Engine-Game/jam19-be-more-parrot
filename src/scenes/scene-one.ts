@@ -80,16 +80,6 @@ export class SceneOne extends Phaser.Scene {
   public preload() {
     // Add background,center and fit
     addBackgroundImage(this, objects.images.scene_one_bg);
-    // addFloor(this, objects.images.floor);
-
-    // Add movement area line
-    const loadingBox = this.add.graphics({
-      fillStyle: {
-        color: 0x222222,
-        alpha: 0.8
-      }
-    });
-    // loadingBox.fillRect(0, PLAYER_MOVEMENT_AREA, this.game.renderer.width, 1);
 
     this.addAnimations();
   }
@@ -127,7 +117,7 @@ export class SceneOne extends Phaser.Scene {
 
     this.input.on('pointerup', (pointer: Phaser.Input.Pointer) => {
 
-      if (hasClickedInMovementArea(pointer.worldX, pointer.worldY)) {
+      if (hasClickedInMovementArea(pointer.worldY)) {
         this.checkpoint = { x: pointer.worldX, y: pointer.worldY };
         if (this.hero.active === true) {
           if (pointer.worldX > this.hero.x) {

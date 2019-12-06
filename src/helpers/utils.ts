@@ -18,8 +18,7 @@ export function addBackgroundImage(scene: Phaser.Scene, background: string) {
   .setDepth(0);
   const scaleX = scene.cameras.main.width / image.width;
   const scaleY = scene.cameras.main.height / image.height;
-  const scale = scaleY - (scaleY / 100 * 20);
-  // const scale = Math.max(scaleX, scaleY);
+  const scale = Math.max(scaleX, scaleY);
   image.setScale(scale).setScrollFactor(0);
 
   return image;
