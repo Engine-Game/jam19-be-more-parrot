@@ -1,5 +1,6 @@
 import { objects } from '../constants/objects';
 import { WORLD_CENTER_X, WORLD_CENTER_Y } from '../constants/positions';
+import {Item} from "../objects/Item";
 
 export class LoadingScene extends Phaser.Scene {
   constructor() {
@@ -7,6 +8,15 @@ export class LoadingScene extends Phaser.Scene {
       key: objects.scenes.loading
     });
   }
+
+  /**
+   * Loads all items under the path using the items file
+   */
+  public loadItems() {
+    this.load.setPath('/assets/items');
+    this.load.json('items', 'items.json');
+    this.load.spritesheet('items', 'item-spritesheet.png', { frameWidth: 32, frameHeight: 32 });
+    }
 
   /**
    * Loads all backgrounds under the path using the constants file
@@ -77,6 +87,9 @@ export class LoadingScene extends Phaser.Scene {
       frameWidth: 16,
       frameHeight: 16
     });
+
+    this.loadItems();
+
     // Create loading bar
     const loadingBar = this.add.graphics({
       fillStyle: {

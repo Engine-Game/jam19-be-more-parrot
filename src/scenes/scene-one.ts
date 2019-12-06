@@ -4,6 +4,7 @@ import { addBackgroundImage, addFloor } from '../helpers/utils';
 import { hasClickedInMovementArea } from '../helpers/movement-utils';
 import { PLAYER_MOVEMENT_AREA, WORLD_CENTER_X } from '../constants/positions';
 import { createSpeechBubble } from '../helpers/text-utils';
+import {Item} from "../objects/Item";
 
 function setFrogActions(scene: Phaser.Scene, frog: CharacterSprite) {
   frog.on('pointerup', () => {
@@ -22,6 +23,7 @@ export class SceneOne extends Phaser.Scene {
     x: number;
     y: number;
   };
+  public itemMap: Phaser.Structs.Map<number, Item>;
 
   constructor() {
     super({
@@ -78,16 +80,6 @@ export class SceneOne extends Phaser.Scene {
   public preload() {
     // Add background,center and fit
     addBackgroundImage(this, objects.images.scene_one_bg);
-    addFloor(this, objects.images.floor);
-
-    // Add movement area line
-    const loadingBox = this.add.graphics({
-      fillStyle: {
-        color: 0x222222,
-        alpha: 0.8
-      }
-    });
-    loadingBox.fillRect(0, PLAYER_MOVEMENT_AREA, this.game.renderer.width, 1);
 
     this.addAnimations();
   }
@@ -104,11 +96,21 @@ export class SceneOne extends Phaser.Scene {
         this.hero.setVelocityX(0);
         this.hero.play('idle', true);
       }
+
+      if (this.checkpoint && this.hero.y > this.checkpoint.y) {
+        this.hero.setVelocityY(0);
+        this.hero.play('idle', true);
+      }
     } else if (this.hero.body.velocity.x < 0) {
       // moving left
       this.hero.play('walk_left', true);
       if (this.checkpoint && this.hero.x < this.checkpoint.x) {
         this.hero.setVelocityX(0);
+        this.hero.play('idle', true);
+      }
+
+      if (this.checkpoint && this.hero.y < this.checkpoint.y) {
+        this.hero.setVelocityY(0);
         this.hero.play('idle', true);
       }
     }
@@ -131,6 +133,16 @@ export class SceneOne extends Phaser.Scene {
             // check if hero has arrived to checkpoint
             this.hero.setActive(true);
           }
+
+          if (pointer.worldY > this.hero.y) {
+            this.hero.setActive(false);
+            this.hero.setVelocityY(128);
+            this.hero.setActive(true);
+          } else {
+            this.hero.setActive(false);
+            this.hero.setVelocityY(-128);
+            this.hero.setActive(true);
+          }
         }
       }
     });
@@ -143,5 +155,18 @@ export class SceneOne extends Phaser.Scene {
     const frog = new CharacterSprite(this, WORLD_CENTER_X + 60, PLAYER_MOVEMENT_AREA * 1.15, objects.sprites.small.frog, 0);
     frog.setInteractive();
     setFrogActions(this, frog);
+
+
+    this.itemMap = Item.getItemMap(this);
+
+    this.itemMap.get(0).x = 470;
+    this.itemMap.get(0).y = 419;
+    this.itemMap.get(0).setScale(3);
+    this.itemMap.get(0).setActive(true);
+
+    this.itemMap.get(7).x = 38;
+    this.itemMap.get(7).y = 170;
+    this.itemMap.get(7).setScale(4.5);
+    this.itemMap.get(7).setActive(true);
   }
 }
