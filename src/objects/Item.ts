@@ -23,9 +23,11 @@ export class Item extends AbstractItem {
     let itemMap = new Phaser.Structs.Map<number, Item>([]);
 
     for (const itemId in items) {
-      let itemObj = items[itemId];
-      let item = new Item(scene, itemObj.id, itemObj.name, itemObj.spriteId, itemObj.inventorySpriteId, itemObj.descriptions, itemObj.combinations);
-      itemMap.set(itemObj.id, item);
+      if (items.hasOwnProperty(itemId)) {
+        let itemObj = items[itemId];
+        let item = new Item(scene, itemObj.id, itemObj.name, itemObj.spriteId, itemObj.inventorySpriteId, itemObj.descriptions, itemObj.combinations);
+        itemMap.set(itemObj.id, item);
+      }
     }
 
     return itemMap;
