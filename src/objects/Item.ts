@@ -33,10 +33,10 @@ export class Item extends AbstractItem {
   public name: string;
   public spriteId: string;
   public inventorySpriteId: string;
-  public descriptions: string;
+  public descriptions: string[];
   public combinations: {};
 
-  constructor(scene: Phaser.Scene, id: number, name: string, spriteId: string, inventorySpriteId: string, descriptions: string, combinations: {}) {
+  constructor(scene: Phaser.Scene, id: number, name: string, spriteId: string, inventorySpriteId: string, descriptions: string[], combinations: {}) {
     super(scene, 0, 0, 'items', spriteId);
     this.id = id;
     this.name = name;

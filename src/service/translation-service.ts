@@ -17,7 +17,7 @@ async function loadLocales() {
     },
     preload: ['en'],
     load: 'languageOnly',
-    debug: false
+    debug: true
   });
 }
 
@@ -25,7 +25,7 @@ async function loadLocales() {
  * i18next entry point that takes in a translation key to be used as a lookup
  * returns the object assigned to the key.
  */
-function translate(key: string) {
+function translate(key: string): (string | string[]) {
   return key !== '' ?
     i18n.t(key, { returnObjects: true }) : key;
 
@@ -35,8 +35,8 @@ function translate(key: string) {
  * Distinctive method to imply that the method should return a string[]
  * @param key the translation key to be resolved
  */
-function translateToArray(key: string) {
-  return translate(key);
+function translateToArray(key: string): string[] {
+  return <string[]> translate(key);
 }
 
 /**
@@ -44,15 +44,15 @@ function translateToArray(key: string) {
  * @param key the key to be resolved
  */
 function translateName(key: string): string {
-  return translate(key);
+  return <string> translate(key);
 }
 
 /**
  * Entry point: resolves a translation key to a descriptions format of string[]
  * @param key the key to be resolved
  */
-function translateDescriptions(key: string) {
-  return translateToArray(key);
+function translateDescriptions(key: string): string[] {
+  return <string[]> translateToArray(key);
 }
 
 /**
