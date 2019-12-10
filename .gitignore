@@ -1,21 +1,32 @@
+# IDE
 .idea/
 .vscode/
 
-node_modules/
 dist/
 build/
 dev/
 *.log
-src_old
-*.old.js
-phaserTilemapfix
-*.zip
-legacy*
-*.txt
-dump/
-*.docx
-*.patch
-*.bak*
-*.old*
-higherVolume/
+
+# Packed files
+www
+
+# Mac
 .DS_Store
+
+# Node
+npm-debug.log
+/node_modules
+
+# Cordova
+/platforms
+/plugins
+build.json
+
+# Android
+.gradle/
+
+# environment
+.env
+
+# coverage
+/test/coverage

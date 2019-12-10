@@ -1,6 +1,6 @@
 import { objects } from '../constants/objects';
+import { scaleRatio, WORLD_CENTER_X, WORLD_CENTER_Y } from '../constants/positions';
 import { addSeamlessBackgroundImage } from '../helpers/utils';
-import { WORLD_CENTER_X, WORLD_CENTER_Y } from '../constants/positions';
 
 /**
  * Adds the following events to any Phaser.GameObjects.Image being passed in:
@@ -40,7 +40,9 @@ export class MenuScene extends Phaser.Scene {
   public preload() {
     // Add using z-index
     // Add logo in the middle and 20% Y axis
-    this.add.image(WORLD_CENTER_X, this.game.renderer.height * 0.2, objects.images.menu_logo).setDepth(1);
+    this.add.image(WORLD_CENTER_X, this.game.renderer.height * 0.2, objects.images.menu_logo)
+    .setScale(scaleRatio, scaleRatio)
+    .setDepth(1);
 
     // Add background,center and fit
     this.bg = addSeamlessBackgroundImage(this, objects.backgrounds.menu_bg);
@@ -55,26 +57,30 @@ export class MenuScene extends Phaser.Scene {
     const continueButton = this.add
     .image(WORLD_CENTER_X - (WORLD_CENTER_X * 0.3), WORLD_CENTER_Y, objects.buttons.continue_button)
     .setDepth(0)
-    .setInteractive();
+    .setInteractive()
+    .setScale(scaleRatio, scaleRatio);
 
     const playButton = this.add
     .image(WORLD_CENTER_X - (WORLD_CENTER_X * 0.3), WORLD_CENTER_Y + (WORLD_CENTER_Y * 0.3), objects.buttons.play_button)
     .setDepth(0)
-    .setInteractive();
+    .setInteractive()
+    .setScale(scaleRatio, scaleRatio);
 
     const helpButton = this.add
     .image(WORLD_CENTER_X + (WORLD_CENTER_X * 0.3), WORLD_CENTER_Y, objects.buttons.help_button)
     .setDepth(0)
-    .setInteractive();
+    .setInteractive()
+    .setScale(scaleRatio, scaleRatio);
 
     const aboutButton = this.add
     .image(WORLD_CENTER_X + (WORLD_CENTER_X * 0.3), WORLD_CENTER_Y + (WORLD_CENTER_Y * 0.3), objects.buttons.about_button)
     .setDepth(0)
-    .setInteractive();
+    .setInteractive()
+    .setScale(scaleRatio, scaleRatio);
 
-    const hoverSelector = this.add.sprite(100, 100, objects.buttons.menu_selector);
-    hoverSelector.setScale(2);
-    hoverSelector.setVisible(false);
+    const hoverSelector = this.add.sprite(100, 100, objects.buttons.menu_selector)
+    .setScale(scaleRatio, scaleRatio)
+    .setVisible(false);
 
     addListenerEvents(continueButton, hoverSelector, () => {
       // Todo: Fetch (from /src/state/game-state.ts) last save status and pass to the next scene (e.g coins, last mission, progress)

@@ -15,14 +15,13 @@ const definePlugin = new webpack.DefinePlugin({
 
 module.exports = {
   entry: {
-    app: [path.resolve(__dirname, 'src/main.ts')],
+    app: [path.resolve(__dirname, 'src/app.ts')],
     vendor: ['phaser']
   },
   devtool: 'cheap-source-map',
   output: {
     pathinfo: true,
-    path: path.resolve(__dirname, 'dev'),
-    publicPath: './dev/',
+    path: path.resolve(__dirname, 'www'),
     library: '[name]',
     libraryTarget: 'umd',
     filename: '[name].js'
@@ -51,7 +50,7 @@ module.exports = {
       host: process.env.IP || 'localhost',
       port: process.env.PORT || 3000,
       server: {
-        baseDir: ['./', './build']
+        baseDir: ['./', './www']
       }
     })
   ],

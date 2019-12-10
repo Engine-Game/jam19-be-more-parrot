@@ -1,10 +1,10 @@
 import { objects } from '../constants/objects';
-import { CharacterSprite } from '../objects/CharacterSprite';
-import { addBackgroundImage, addFloor } from '../helpers/utils';
+import { PLAYER_MOVEMENT_AREA, scaleRatio, WORLD_CENTER_X } from '../constants/positions';
 import { hasClickedInMovementArea } from '../helpers/movement-utils';
-import { PLAYER_MOVEMENT_AREA, WORLD_CENTER_X } from '../constants/positions';
 import { createSpeechBubble } from '../helpers/text-utils';
-import {Item} from "../objects/Item";
+import { addBackgroundImage } from '../helpers/utils';
+import { CharacterSprite } from '../objects/CharacterSprite';
+import { Item } from '../objects/Item';
 
 function setFrogActions(scene: Phaser.Scene, frog: CharacterSprite) {
   frog.on('pointerup', () => {
@@ -149,24 +149,24 @@ export class SceneOne extends Phaser.Scene {
   }
 
   public create() {
-    console.log('Scene One - Scene');
-
     this.hero = new CharacterSprite(this, WORLD_CENTER_X, PLAYER_MOVEMENT_AREA * 1.10, objects.sprites.medium.hero, 4);
     const frog = new CharacterSprite(this, WORLD_CENTER_X + 60, PLAYER_MOVEMENT_AREA * 1.15, objects.sprites.small.frog, 0);
     frog.setInteractive();
     setFrogActions(this, frog);
-
-
     this.itemMap = Item.getItemMap(this);
 
-    this.itemMap.get(0).x = 470;
-    this.itemMap.get(0).y = 419;
-    this.itemMap.get(0).setScale(3);
+    this.itemMap.get(0).x = 710;
+    this.itemMap.get(0).y = 840;
+    this.itemMap.get(0)
+    .setScale(scaleRatio, scaleRatio)
+    .setScale(5);
     this.itemMap.get(0).setActive(true);
 
-    this.itemMap.get(7).x = 38;
-    this.itemMap.get(7).y = 170;
-    this.itemMap.get(7).setScale(4.5);
+    this.itemMap.get(7).x = 300;
+    this.itemMap.get(7).y = 375;
+    this.itemMap.get(7)
+    .setScale(scaleRatio, scaleRatio)
+    .setScale(5);
     this.itemMap.get(7).setActive(true);
   }
 }

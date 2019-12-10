@@ -24,8 +24,8 @@ export class About extends Phaser.Scene {
     this.addCredit('Graphics', 'Designer 1');
 
     this.addAction(objects.buttons.back_button, () => {
-        this.scene.start(objects.scenes.menu);
-      }
+      this.scene.start(objects.scenes.menu);
+    }
     );
   }
 

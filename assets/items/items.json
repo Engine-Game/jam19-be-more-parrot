@@ -1,492 +1,430 @@
 {
   "0": {
     "id": 0,
-    "name": "Exit Door (Closed)",
+    "name": "items.0.name",
     "spriteId": 0,
     "inventorySpriteId": 0,
-    "descriptions": [
-      "You shall not pass!"
-    ],
-    "combinations": {
-      "29": {
-        "text": [
-          "You placed the bucket on the floor next to the door."
-        ]
+    "descriptions": "items.0.descriptions",
+    "combinations": [
+      {
+        "id": 29,
+        "text": "items.0.combinations.29"
       }
-    }
+    ]
   },
   "1": {
     "id": 1,
-    "name": "Exit Door (Opening)",
+    "name": "items.1.name",
     "spriteId": 1,
     "inventorySpriteId": 1,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.1.descriptions",
+    "combinations": []
   },
   "2": {
     "id": 2,
-    "name": "Exit Door (Open)",
+    "name": "items.2.name",
     "spriteId": 2,
     "inventorySpriteId": 2,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.2.descriptions",
+    "combinations": []
   },
   "3": {
     "id": 3,
-    "name": "Porthole",
+    "name": "items.3.name",
     "spriteId": 3,
     "inventorySpriteId": 3,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "25": {
-        "text": [
-          "[you dumped out the sick from the bucket... hopefully there was nobody standing underneath...]"
-        ],
+    "descriptions": "items.3.descriptions",
+    "combinations": [
+      {
+        "id": 25,
+        "text": "items.3.combinations.25",
         "newItemId": 26
       }
-    }
+    ]
   },
   "4": {
     "id": 4,
-    "name": "Bed",
+    "name": "items.4.name",
     "spriteId": 4,
     "inventorySpriteId": 4,
-    "descriptions": [
-      "There's no going back.", "Don't be such a lazy shit."
-    ],
-    "combinations": {}
+    "descriptions": "items.4.descriptions",
+    "combinations": []
   },
   "5": {
     "id": 5,
-    "name": "Bed Lamp (On, Plugged In)",
+    "name": "items.5.name",
     "spriteId": 5,
     "inventorySpriteId": 5,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.5.descriptions",
+    "combinations": []
   },
   "6": {
     "id": 6,
-    "name": "Bed Lamp (Off, Unplugged)",
+    "name": "items.6.name",
     "spriteId": 6,
     "inventorySpriteId": 6,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.6.descriptions",
+    "combinations": []
   },
   "7": {
     "id": 7,
-    "name": "Wall Socket (Bed Lamp Plugged In)",
+    "name": "items.7.name",
     "spriteId": 7,
     "inventorySpriteId": 7,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.7.descriptions",
+    "combinations": []
   },
   "8": {
     "id": 8,
-    "name": "Wall Socket (Nothing Plugged In)",
+    "name": "items.8.name",
     "spriteId": 8,
     "inventorySpriteId": 8,
-    "descriptions": [
-      "What did you think that was gonna do?", "Don't stick your finger in there!"
-    ],
-    "combinations": {
-      "29": {
-        "text": [
-          ".... BOOOOOOM!!!!"
-        ]
+    "descriptions": "items.8.descriptions",
+    "combinations": [
+      {
+        "id": 29,
+        "text": "items.8.combinations.29"
       }
-    }
+    ]
   },
   "9": {
     "id": 9,
-    "name": "Wall Socket (Bucket Plugged In)",
+    "name": "items.9.name",
     "spriteId": 9,
     "inventorySpriteId": 9,
-    "descriptions": [
-      "That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.",
-      "You knock knock knocked that out of the park.", "Just go through the door, idiot."
-    ],
-    "combinations": {}
+    "descriptions": "items.9.descriptions",
+    "combinations": []
   },
   "10": {
     "id": 10,
-    "name": "Mini Bar (External)",
+    "name": "items.10.name",
     "spriteId": 10,
     "inventorySpriteId": 10,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.10.descriptions",
+    "combinations": []
   },
   "11": {
     "id": 11,
-    "name": "Alcohol Bottle",
+    "name": "items.11.name",
     "spriteId": 11,
     "inventorySpriteId": 11,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "0": {
-        "text": [
-          "Alcohol is the key to happiness. Not this door."
-        ]
+    "descriptions": "items.11.descriptions",
+    "combinations": [
+      {
+        "id": 0,
+        "text": "items.11.combinations.0"
       },
-      "3": {
-        "text": [
-          "That's a waste of good booze."
-        ]
+      {
+        "id": 3,
+        "text": "items.11.combinations.3"
       },
-      "26": {
+      {
+        "id": 26,
+        "text": "items.11.combinations.26",
         "newItemId": 28
       },
-      "27": {
+      {
+        "id": 27,
+        "text": "items.11.combinations.27",
         "newItemId": 29
       }
-    }
+    ]
   },
   "12": {
     "id": 12,
-    "name": "Mini Bar Nuts",
+    "name": "items.12.name",
     "spriteId": 12,
     "inventorySpriteId": 12,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "0": {
-        "text": [
-          "Nuthing happened.", "That's nut going to help.", "Don't put your nuts all over the door."
-        ]
+    "descriptions": "items.12.descriptions",
+    "combinations": [
+      {
+        "id": 0,
+        "text": "items.12.combinations.0"
       },
-      "3": {
-        "text": [
-          "That's a waste of good nuts."
-        ]
+      {
+        "id": 3,
+        "text": "items.12.combinations.3"
       },
-      "30": {
-        "text": [
-          "[...the parrot seems willing to talk...]"
-        ]
+      {
+        "id": 30,
+        "text": "items.12.combinations.30"
       }
-    }
+    ]
   },
   "13": {
     "id": 13,
-    "name": "Lava Lamp (Plugged In On Table)",
+    "name": "items.13.name",
     "spriteId": 13,
     "inventorySpriteId": 13,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "26": {
+    "descriptions": "items.13.descriptions",
+    "combinations": [
+      {
+        "id": 26,
+        "text": "items.13.combinations.26",
         "newItemId": 27
       },
-      "28": {
+      {
+        "id": 28,
+        "text": "items.13.combinations.28",
         "newItemId": 29
       }
-    }
+    ]
   },
   "14": {
     "id": 14,
-    "name": "Lava Lamp (Unplugged)",
+    "name": "items.14.name",
     "spriteId": 14,
     "inventorySpriteId": 14,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "1": {
-        "text": [
-          "I lava the way you're thinking. But you're wrong."
-        ]
+    "descriptions": "items.14.descriptions",
+    "combinations": [
+      {
+        "id": 1,
+        "text": "items.14.combinations.1"
       },
-      "3": {
-        "text": [
-          "I lava the way you're thinking. But you're wrong."
-        ]
+      {
+        "id": 3,
+        "text": "items.14.combinations.3"
       },
-      "7": {
-        "text": [
-          "Something's already plugged in, genius."
-        ]
+      {
+        "id": 7,
+        "text": "items.14.combinations.7"
       },
-      "8": {
+      {
+        "id": 8,
+        "text": "items.14.combinations.8",
         "newItemId": 9
       },
-      "26": {
+      {
+        "id": 26,
+        "text": "items.14.combinations.26",
         "newItemId": 27
       },
-      "28": {
+      {
+        "id": 28,
+        "text": "items.14.combinations.28",
         "newItemId": 29
       }
-    }
+    ]
   },
   "15": {
     "id": 15,
-    "name": "Wardrobe (Closed, Noises)",
+    "name": "items.15.name",
     "spriteId": 15,
     "inventorySpriteId": 15,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.15.descriptions",
+    "combinations": []
   },
   "16": {
     "id": 16,
-    "name": "Wardrobe (Opening)",
+    "name": "items.16.name",
     "spriteId": 16,
     "inventorySpriteId": 16,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.16.descriptions",
+    "combinations": []
   },
   "17": {
     "id": 17,
-    "name": "Wardrobe (Open)",
+    "name": "items.17.name",
     "spriteId": 17,
     "inventorySpriteId": 17,
-    "descriptions": [
-      "I can confirm this doesn't lead to Narnia."
-    ],
-    "combinations": {}
+    "descriptions": "items.17.descriptions",
+    "combinations": []
   },
   "18": {
     "id": 18,
-    "name": "Torch",
+    "name": "items.18.name",
     "spriteId": 18,
     "inventorySpriteId": 18,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "2": {
-        "text": [
-          "That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.",
-          "You knock knock knocked that out of the park."
-        ]
+    "descriptions": "items.18.descriptions",
+    "combinations": [
+      {
+        "id": 2,
+        "text": "items.18.combinations.2"
       },
-      "3": {
-        "text": [
-          "It's daytime. Use your eyes. Moron."
-        ]
+      {
+        "id": 3,
+        "text": "items.18.combinations.3"
       }
-    }
+    ]
   },
   "19": {
     "id": 19,
-    "name": "Lighter",
+    "name": "items.19.name",
     "spriteId": 19,
     "inventorySpriteId": 19,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "0": {
-        "text": [
-          "You flaming idiot."
-        ]
+    "descriptions": "items.19.descriptions",
+    "combinations": [
+      {
+        "id": 0,
+        "text": "items.19.combinations.0"
       },
-      "2": {
-        "text": [
-          "That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.",
-          "You knock knock knocked that out of the park."
-        ]
+      {
+        "id": 2,
+        "text": "items.19.combinations.2"
       },
-      "3": {
-        "text": [
-          "It's not raining. You can't set fire to anything right now."
-        ]
+      {
+        "id": 3,
+        "text": "items.19.combinations.3"
       }
-    }
+    ]
   },
   "20": {
     "id": 20,
-    "name": "GameBae",
+    "name": "items.20.name",
     "spriteId": 20,
     "inventorySpriteId": 20,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "0": {
-        "text": [
-          "The princess is in another castle"
-        ]
+    "descriptions": "items.20.descriptions",
+    "combinations": [
+      {
+        "id": 0,
+        "text": "items.20.combinations.0"
       },
-      "2": {
-        "text": [
-          "That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.",
-          "You knock knock knocked that out of the park."
-        ]
+      {
+        "id": 2,
+        "text": "items.20.combinations.2"
       },
-      "3": {
-        "text": [
-          "Why..?", "Keep that, it'll be a collectible someday."
-        ]
+      {
+        "id": 3,
+        "text": "items.20.combinations.3"
+
       }
-    }
+    ]
   },
   "21": {
     "id": 21,
-    "name": "Parrot Chair (Empty of Parrot)",
+    "name": "items.21.name",
     "spriteId": 21,
     "inventorySpriteId": 21,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.21.descriptions",
+    "combinations": []
   },
   "22": {
     "id": 22,
-    "name": "Parrot Chair (Full of Parrot)",
+    "name": "items.22.name",
     "spriteId": 22,
     "inventorySpriteId": 22,
-    "descriptions": [
-      "Keep your fingers to yourself!", "Get back to the mission.", "Keep your eyes on the prize!",
-      "I am not the prize."
-    ],
-    "combinations": {}
+    "descriptions": "items.22.descriptions",
+    "combinations": []
   },
   "23": {
     "id": 23,
-    "name": "Party Flyer (On Table)",
+    "name": "items.23.name",
     "spriteId": 23,
     "inventorySpriteId": 23,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {}
+    "descriptions": "items.23.descriptions",
+    "combinations": []
   },
   "24": {
     "id": 24,
-    "name": "Poster(s)",
+    "name": "items.24.name",
     "spriteId": 24,
     "inventorySpriteId": 24,
-    "descriptions": [
-      "TBC when we know what the posters are"
-    ],
-    "combinations": {}
+    "descriptions": "items.24.descriptions",
+    "combinations": []
   },
   "25": {
     "id": 25,
-    "name": "Sick Bucket (Initially full of sick)",
+    "name": "items.25.name",
     "spriteId": 25,
     "inventorySpriteId": 25,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "0": {
-        "text": [
-          "That's pretty sick.", "Why would you do that?"
-        ]
+    "descriptions": "items.25.descriptions",
+    "combinations": [
+      {
+        "id": 0,
+        "text": "items.25.combinations.0"
       },
-      "3": {
+      {
+        "id": 3,
+        "text": "items.25.combinations.3",
         "newItemId": 26
       }
-    }
+    ]
   },
   "26": {
     "id": 26,
-    "name": "Sick Bucket (Empty)",
+    "name": "items.26.name",
     "spriteId": 26,
     "inventorySpriteId": 26,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "0": {
-        "text": [
-          "This is a sick place for a bucket."
-        ]
+    "descriptions": "items.26.descriptions",
+    "combinations": [
+      {
+        "id": 0,
+        "text": "items.26.combinations.0"
       },
-      "11": {
+      {
+        "id": 11,
+        "text": "items.26.combinations.11",
         "newItemId": 28
       },
-      "13": {
+      {
+        "id": 13,
+        "text": "items.26.combinations.13",
         "newItemId": 27
       },
-      "14": {
+      {
+        "id": 14,
+        "text": "items.26.combinations.14",
         "newItemId": 27
       }
-    }
+    ]
   },
   "27": {
     "id": 27,
-    "name": "Sick Bucket (With Lava Lamp)",
+    "name": "items.27.name",
     "spriteId": 27,
     "inventorySpriteId": 27,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "11": {
+    "descriptions": "items.27.descriptions",
+    "combinations": [
+      {
+        "id": 1,
+        "text": "items.27.combinations.1",
         "newItemId": 29
       }
-    }
+    ]
   },
   "28": {
     "id": 28,
-    "name": "Sick Bucket (With Alcohol)",
+    "name": "items.28.name",
     "spriteId": 28,
     "inventorySpriteId": 28,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "13": {
+    "descriptions": "items.28.descriptions",
+    "combinations": [
+      {
+        "id": 3,
+        "text": "items.28.combinations.3",
         "newItemId": 29
       },
-      "14": {
+      {
+        "id": 14,
+        "text": "items.28.combinations.14",
         "newItemId": 29
       }
-    }
+    ]
   },
   "29": {
     "id": 29,
-    "name": "Sick Bucket (With Lava Lamp and Alcohol)",
+    "name": "items.29.name",
     "spriteId": 29,
     "inventorySpriteId": 29,
-    "descriptions": [
-      ""
-    ],
-    "combinations": {
-      "8": {
-        "text": [
-          "You can feel the heat radiating off, its about to explode."
-        ]
+    "descriptions": "items.29.descriptions",
+    "combinations": [
+      {
+        "id": 8,
+        "text": "items.29.combinations.8"
       }
-    }
+    ]
   },
   "30": {
     "id": 30,
-    "name": "Parrot",
+    "name": "items.30.name",
     "spriteId": 30,
     "inventorySpriteId": 30,
-    "descriptions": [
-      "Keep your fingers to yourself!", "Get back to the mission.", "Keep your eyes on the prize!",
-      "I am not the prize."
-    ],
-    "combinations": {
-      "12": {
-        "text": [
-          "[...the parrot starts talking...]"
-        ]
+    "descriptions": "items.30.descriptions",
+    "combinations": [
+      {
+        "id": 12,
+        "text": "items.29.combinations.12"
       }
-    }
+    ]
   }
 }

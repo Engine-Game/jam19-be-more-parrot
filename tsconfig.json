@@ -5,12 +5,15 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "strict": false,
-    "typeRoots": ["./typings"]
+    "typeRoots": [
+      "node_modules/@types/"
+    ]
   },
-
-  "files": [
-    "src/main.ts",
-    "typings/phaser.d.ts"
+  "include": [
+    "./src/**/*",
+    "./plugins/**/*"
   ]
 }

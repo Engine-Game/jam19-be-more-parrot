@@ -1,0 +1,215 @@
+{
+  "close_dialog_title": "Exit",
+  "close_dialog_message": "Are you sure you want to exit the application?",
+  "items": {
+    "0": {
+      "name": "Exit Door (Closed)",
+      "descriptions": ["You shall not pass!"],
+      "combinations": {
+        "29": { "text": ["You placed the bucket on the floor next to the door."] }
+      }
+    }
+  },
+  "1": {
+      "name": "Exit Door (Opening)",
+      "descriptions": [""],
+      "combinations": { }
+    },
+  "2": {
+      "name": "Exit Door (Open)",
+      "descriptions": [""],
+      "combinations": { }
+    },
+  "3": {
+      "name": "Porthole",
+      "descriptions": [""],
+      "combinations": {
+        "25": { "text": ["[you dumped out the sick from the bucket... hopefully there was nobody standing underneath...]"] }
+      }
+    },
+  "4": {
+      "name": "Bed",
+      "descriptions": ["There's no going back.", "Don't be such a lazy shit."],
+      "combinations": { }
+    },
+  "5": {
+    "name": "Bed Lamp (On, Plugged In)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "6": {
+    "name": "Bed Lamp (Off, Unplugged)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "7": {
+    "name": "Wall Socket (Bed Lamp Plugged In)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "8": {
+    "name": "Wall Socket (Nothing Plugged In)",
+    "descriptions": [ "What did you think that was gonna do?", "Don't stick your finger in there!"],
+    "combinations": {
+      "29": { "text": [".... BOOOOOOM!!!!"] }
+    }
+  },
+  "9": {
+    "name": "Wall Socket (Bucket Plugged In)",
+    "descriptions": ["That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.", "You knock knock knocked that out of the park.", "Just go through the door, idiot."],
+    "combinations": { }
+  },
+  "10": {
+    "name": "Mini Bar (External)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "11": {
+    "name": "Alcohol Bottle",
+    "descriptions": [""],
+    "combinations": {
+      "0": { "text": ["Alcohol is the key to happiness. Not this door."] },
+      "3": { "text": ["That's a waste of good booze."] },
+      "26": { "text": [""] },
+      "27": { "text": [""] }
+    }
+  },
+  "12": {
+    "name": "Mini Bar Nuts",
+    "descriptions": [""],
+    "combinations": {
+      "0": { "text": ["Nuthing happened.", "That's nut going to help.", "Don't put your nuts all over the door."] },
+      "3": { "text": ["That's a waste of good nuts."] },
+      "30": { "text": ["[...the parrot seems willing to talk...]"] }
+    }
+  },
+  "13": {
+    "name": "Lava Lamp (Plugged In On Table)",
+    "descriptions": [""],
+    "combinations": {
+      "26": { "text": [""] },
+      "27": { "text": [""] }
+    }
+  },
+  "14": {
+    "name": "Lava Lamp (Unplugged)",
+    "descriptions": [""],
+    "combinations": {
+      "1": { "text": ["I lava the way you're thinking. But you're wrong."] },
+      "3": { "text": ["I lava the way you're thinking. But you're wrong."] },
+      "7": { "text": ["Something's already plugged in, genius."] },
+      "8": { "text": [""] },
+      "26": { "text": [""] },
+      "28": { "text": [""] }
+    }
+  },
+  "15": {
+    "name": "Wardrobe (Closed, Noises)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "16": {
+    "name": "Wardrobe (Opening)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "17": {
+    "name": "Wardrobe (Open)",
+    "descriptions": ["I can confirm this doesn't lead to Narnia."],
+    "combinations": { }
+  },
+  "18": {
+    "name": "Torch",
+    "descriptions": [""],
+    "combinations": {
+      "2": { "text": ["That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.", "You knock knock knocked that out of the park."]},
+      "3": { "text": ["It's daytime. Use your eyes. Moron."] }
+    }
+  },
+  "19": {
+    "name": "Lighter",
+    "descriptions": [""],
+    "combinations": {
+      "0": { "text": ["You flaming idiot."]},
+      "2": { "text": ["That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.", "You knock knock knocked that out of the park."] },
+      "3": { "text": ["It's not raining. You can't set fire to anything right now."] }
+    }
+  },
+  "20": {
+    "name": "GameBae",
+    "descriptions": [""],
+    "combinations": {
+      "0": { "text": ["The princess is in another castle"]},
+      "2": { "text": ["That's a-doorable!", "When one door closes, that one opens.", "You seem a little unhinged.", "You knock knock knocked that out of the park."] },
+      "3": { "text": [ "Why..?", "Keep that, it'll be a collectible someday."] }
+    }
+  },
+  "21": {
+    "name": "Parrot Chair (Empty of Parrot)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "22": {
+    "name": "Parrot Chair (Full of Parrot)",
+    "descriptions": ["Keep your fingers to yourself!", "Get back to the mission.", "Keep your eyes on the prize!", "I am not the prize."],
+    "combinations": { }
+  },
+  "23": {
+    "name": "Party Flyer (On Table)",
+    "descriptions": [""],
+    "combinations": { }
+  },
+  "24": {
+    "name": "Poster(s)",
+    "descriptions": ["TBC when we know what the posters are"],
+    "combinations": { }
+  },
+  "25": {
+    "name": "Sick Bucket (Initially full of sick)",
+    "descriptions": [""],
+    "combinations": {
+      "0": { "text": ["That's pretty sick.", "Why would you do that?"]},
+      "3": { "text": [""]}
+    }
+  },
+  "26": {
+    "name": "Sick Bucket (Empty)",
+    "descriptions": [""],
+    "combinations": {
+      "0": { "text": ["This is a sick place for a bucket."]},
+      "11": { "text": [""]},
+      "13": { "text": [""]},
+      "14": { "text": [""]}
+    }
+  },
+  "27": {
+    "name": "Sick Bucket (With Lava Lamp)",
+    "descriptions": [""],
+    "combinations": {
+      "1": { "text": [""]}
+    }
+  },
+  "28": {
+    "name": "Sick Bucket (With Alcohol)",
+    "descriptions": [""],
+    "combinations": {
+      "3": { "text": [""]},
+      "14": { "text": [""]}
+    }
+  },
+  "29": {
+    "name": "Sick Bucket (With Lava Lamp and Alcohol)",
+    "descriptions": [""],
+    "combinations": {
+      "8": { "text": ["You can feel the heat radiating off, its about to explode."]}
+    }
+  },
+  "30": {
+    "name": "Parrot",
+    "descriptions": ["Keep your fingers to yourself!", "Get back to the mission.", "Keep your eyes on the prize!", "I am not the prize."],
+    "combinations": {
+      "12": { "text": ["[...the parrot starts talking...]"]}
+    }
+  }
+}
+
