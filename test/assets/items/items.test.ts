@@ -22,7 +22,6 @@ describe('Items', () => {
     // tslint:disable-next-line:prefer-for-of
     for (let i = 0; i < keys.length - 1; i++) {
       const value = items[keys[i]];
-      console.info(value);
       const expectedNameKey = `items.${value['id']}.name`;
       const expectedDescriptionKey = `items.${value['id']}.descriptions`;
 
