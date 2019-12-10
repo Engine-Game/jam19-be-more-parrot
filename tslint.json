@@ -1,6 +1,10 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:recommended"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard",
+    "tslint-no-unused-expression-chai"
+  ],
   "jsRules": {},
   "rules": {
     "align": false,
@@ -15,7 +19,7 @@
     "one-line": [true, "check-open-brace", "check-whitespace"],
     "object-literal-sort-keys": [false],
     "object-literal-key-quotes": [true, "as-needed"],
-    "ordered-imports": false,
+    "ordered-imports": true,
     "no-shadowed-variable": false,
     "quotemark": [true, "single", "avoid-escape"],
     "space-before-function-paren": [

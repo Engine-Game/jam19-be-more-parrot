@@ -18,8 +18,8 @@ export class Help extends Phaser.Scene {
     this.addHelpText();
 
     this.addAction(objects.buttons.back_button, () => {
-        this.scene.start(objects.scenes.menu);
-      }
+      this.scene.start(objects.scenes.menu);
+    }
     );
   }
 

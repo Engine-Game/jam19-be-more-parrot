@@ -1,4 +1,4 @@
-//TODO: Use this as a game state, update and add inventory as items are used or collected and update current mission.
+// TODO: Use this as a game state, update and add inventory as items are used or collected and update current mission.
 export const gameState = {
   inventory: {
     coins: 90,

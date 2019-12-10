@@ -1,6 +1,6 @@
 // Save utils here
-import { gameState } from '../state/game-state';
 import { PLAYER_MOVEMENT_AREA } from '../constants/positions';
+import { gameState } from '../state/game-state';
 
 export function getGameState() {
   return gameState;
